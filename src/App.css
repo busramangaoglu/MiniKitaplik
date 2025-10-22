@@ -2,12 +2,15 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  background-color: #FFB6C1; /* Pembe arka plan */
+  min-height: 100vh;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #800080; /* Mor başlık */
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .kontroller {
@@ -46,16 +49,16 @@ h1 {
 }
 
 .kitap-karti {
-  border: 1px solid #ddd;
+  border: 1px solid #FFB6C1;
   padding: 1rem;
   border-radius: 8px;
-  background: white;
+  background: #FFF0F5; /* Açık pembe arka plan */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .kitap-karti h3 {
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: #800080; /* Mor başlık */
 }
 
 .kitap-karti p {
@@ -64,7 +67,7 @@ h1 {
 }
 
 .kitap-karti button {
-  background: #4CAF50;
+  background: #FF1493; /* Koyu pembe (Deep Pink) */
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -72,10 +75,20 @@ h1 {
   cursor: pointer;
   width: 100%;
   margin-top: 1rem;
+  transition: background-color 0.3s;
 }
 
 .kitap-karti button.favori-aktif {
-  background: #f44336;
+  background: #C71585; /* Daha koyu pembe (Medium Violet Red) */
+}
+
+.kitap-karti button:hover {
+  background: #DB7093; /* Biraz daha açık pembe (Pale Violet Red) */
+  transform: scale(1.02);
+}
+
+.kitap-karti button.favori-aktif:hover {
+  background: #B22222; /* Daha koyu bir ton */
 }
 
 .favori-paneli {
